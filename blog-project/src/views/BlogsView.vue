@@ -34,7 +34,7 @@
                 <v-col cols="12">
                   <v-textarea
                     v-model="description"
-                    label="Isi Post di Sini"
+                    label="Isi Deskripsi"
                     required
                   ></v-textarea>
                 </v-col>
@@ -67,6 +67,7 @@
       ></blog-item-component>
     </v-layout>
     <v-pagination
+      color="teal"
       v-model="page"
       @input="go"
       :length="lengthPage"
